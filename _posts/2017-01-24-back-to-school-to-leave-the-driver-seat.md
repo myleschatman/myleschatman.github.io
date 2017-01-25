@@ -12,9 +12,9 @@ public compared to operator with the primary responsibility to keep everyone
 safe around them is quite the difference.
 
 Personally, instead of anticipating that day when these vehicles would hit the
-road and become a service, < What should I say here>
+road and become a service, ...
 
 Prior to joining this project on a full time basis, becoming a Software Engineer
 had already been a goal while attending a Community College. Being
 introduced into programming taking courses in C and Java challenges the student
-in a way that feels quite <finish sentence>
+in a way that feels quite ...
