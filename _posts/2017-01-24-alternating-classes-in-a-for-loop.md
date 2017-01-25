@@ -2,25 +2,21 @@
 title: "Alternate Classes in a For Loop"
 layout: post
 ---
-There may come a situation where you need to display content that has similar
-components so you decide to use a for loop but you need to use different
-classes.
+When using a for loop in Liquid, you may not want all of the content's
+styling to be identical. For example, here is a layout that is not warranted.
 
-Here is an example of displaying a list of posts with their corresponding
-images.
+![alt text](/assets/img/cupcake_ipsum_2.png){:height="429.50px" width="915px"}
 
-Insert images here.
+The second image inside the div is positioned on the left similarly to the
+first image above. The desired look is to have the second image positioned to
+the right with the text to the left.
 
-The issue here is that the content is identical and is not the look we are
-attempting to achieve. How about instead of having the second image below on
-the left, we move it to the right leaving the text to float left.
+![alt text](/assets/img/cupcake_ipsum_1.png){:height="429.50px" width="915px"}
 
-Insert images here.
+The classes Capture and Cycle inside of a for loop to can create the layout
+above.
 
-We will be using the classes Capture and Cycle inside of a for loop to
-create the layout above.
-
-Capture stores the result of block into a variable.
+Capture stores the result of a block into a variable.
 {% raw %}
 ~~~html
   {% capture text %}
