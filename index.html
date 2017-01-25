@@ -6,21 +6,20 @@ title: Home - Myxi
 	<div id="wrapper" class="divided">
 
 		<!-- One -->
+		{% for post in site.posts limit: 1 %}
 			<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
 				<div class="content">
-					{% for post in site.posts limit: 1 %}
 						<h1>{{ post.title }}</h1>
-						<h2>{{ post.date }}
 						<p class="major">{{ post.content | truncatewords: 60 }}</p>
-					{% endfor %}
 					<ul class="actions vertical">
 						<li><a href="#first" class="button big wide smooth-scroll-middle">Read More</a></li>
 					</ul>
 				</div>
 				<div class="image">
-					<img src="images/google/IMG_3488_edit.png" alt="" />
+					<img src="{{ site.baseurl }}{{ post.image }}" alt="" />
 				</div>
 			</section>
+			{% endfor %}
 
 			{% for post in site.posts offset: 1 limit: 3 %}
 				{% capture orientation %}{% cycle "orient-right", "orient-left" %}{% endcapture %}
@@ -90,8 +89,8 @@ title: Home - Myxi
 				<!-- Gallery -->
 					<div class="gallery style2 medium lightbox onscroll-fade-in">
 						<article>
-							<a href="images/gallery/fulls/01.jpg" class="image">
-								<img src="images/gallery/thumbs/01.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/01.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/01.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Ipsum Dolor</h3>
@@ -102,8 +101,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/02.jpg" class="image">
-								<img src="images/gallery/thumbs/02.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/02.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/02.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Feugiat Lorem</h3>
@@ -114,8 +113,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/03.jpg" class="image">
-								<img src="images/gallery/thumbs/03.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/03.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/03.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Magna Amet</h3>
@@ -126,8 +125,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/04.jpg" class="image">
-								<img src="images/gallery/thumbs/04.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/04.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/04.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Sed Tempus</h3>
@@ -138,8 +137,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/05.jpg" class="image">
-								<img src="images/gallery/thumbs/05.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/05.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/05.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Ultrices Magna</h3>
@@ -150,8 +149,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/06.jpg" class="image">
-								<img src="images/gallery/thumbs/06.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/06.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/06.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Sed Tempus</h3>
@@ -162,8 +161,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/07.jpg" class="image">
-								<img src="images/gallery/thumbs/07.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/07.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/07.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Ipsum Lorem</h3>
@@ -174,8 +173,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/08.jpg" class="image">
-								<img src="images/gallery/thumbs/08.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/08.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/08.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Magna Risus</h3>
@@ -186,8 +185,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/09.jpg" class="image">
-								<img src="images/gallery/thumbs/09.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/09.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/09.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Tempus Dolor</h3>
@@ -198,8 +197,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/10.jpg" class="image">
-								<img src="images/gallery/thumbs/10.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/10.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/10.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Sed Etiam</h3>
@@ -210,8 +209,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/11.jpg" class="image">
-								<img src="images/gallery/thumbs/11.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/11.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/11.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Magna Lorem</h3>
@@ -222,8 +221,8 @@ title: Home - Myxi
 							</div>
 						</article>
 						<article>
-							<a href="images/gallery/fulls/12.jpg" class="image">
-								<img src="images/gallery/thumbs/12.jpg" alt="" />
+							<a href="assets/img/gallery/fulls/12.jpg" class="image">
+								<img src="assets/img/gallery/thumbs/12.jpg" alt="" />
 							</a>
 							<div class="caption">
 								<h3>Ipsum Dolor</h3>

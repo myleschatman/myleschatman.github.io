@@ -3,7 +3,7 @@ layout: post
 title: "Back to School to Leave the Driver Seat"
 date: 2017-01-24
 categories: self-driving-car
-image: assets/img/google/IMG_3488_edit.png
+image: assets/img/SelfDrivingCar/IMG_3488_edit.png
 ---
 It is to no surprise that Self Driving cars exist and the idea of
 having access to let these vehicles drive you from point A to point B is

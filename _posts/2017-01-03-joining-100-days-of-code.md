@@ -3,7 +3,7 @@ layout: post
 title: "Joining #100DaysOfCode Challenge"
 date: 2017-01-02
 categories: programming
-image: assets/img/100DaysOfCode/IMG_0000.jpg
+image: assets/img/100DaysOfCode/IMG_0000_edit.jpg
 ---
 
 Close to the end of the year of 2016, I read an article on Medium about
