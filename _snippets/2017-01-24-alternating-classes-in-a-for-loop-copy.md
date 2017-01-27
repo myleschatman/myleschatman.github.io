@@ -3,9 +3,13 @@ title: "Alternate Classes in a For Loop"
 layout: post
 ---
 When using a for loop in Liquid, you may not want all of the content's
-styling to be identical. For example, here is a layout that is not warranted.
+styling to be identical. For example, here is a layout that displays two
+image with a text description to the right.
 
 ![alt text](/assets/img/cupcake_ipsum_2.png){:height="429.50px" width="915px"}
+
+But what if we wanted to alternate the position of the image so that it
+is rotates from left to right as we proceed to the next image.
 
 The second image inside the div is positioned on the left similarly to the
 first image above. The desired look is to have the second image positioned to
