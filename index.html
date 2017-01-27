@@ -5,7 +5,7 @@ title: Home - Myxi
 <!-- Wrapper -->
 	<div id="wrapper" class="divided">
 
-		<!-- One -->
+		<!-- Featured Post -->
 		{% for post in site.posts limit: 1 %}
 			<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
 				<div class="content">
@@ -21,7 +21,8 @@ title: Home - Myxi
 			</section>
 		{% endfor %}
 
-		{% for post in site.posts offset: 0 limit: 3 %}
+		<!-- Spotlight -->
+		{% for post in site.posts offset: 1 limit: 3 %}
 			{% capture orientation %}{% cycle "orient-right", "orient-left" %}{% endcapture %}
 			<section class="spotlight style1 {{ orientation }} content-align-left image-position-center onscroll-image-fade-in" id="first">
 				<div class="content">
@@ -45,20 +46,22 @@ title: Home - Myxi
 				</div>
 
 				<!-- Gallery -->
-					<div class="gallery style2 medium lightbox onscroll-fade-in">
+				{% for project in site.projects %}
+			 		<div class="gallery style2 medium lightbox onscroll-fade-in">
 						<article>
 							<a href="assets/img/gallery/fulls/01.jpg" class="image">
-								<img src="assets/img/gallery/thumbs/01.jpg" alt="" />
+								<!-- <img src="{{ site.baseurl }}{{ project.image }}" alt="" /> -->
 							</a>
 							<div class="caption">
-								<h3>Ipsum Dolor</h3>
-								<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+								<h3>{{ project.title }}</h3>
+								<p>{{ project.description }}</p>
 								<ul class="actions">
-									<li><span class="button small">Details</span></li>
+									<li><span class="button small"><a href="#">Details</a></span></li>
 								</ul>
 							</div>
 						</article>
-						<article>
+					{% endfor %}
+					 	<!-- <article>
 							<a href="assets/img/gallery/fulls/02.jpg" class="image">
 								<img src="assets/img/gallery/thumbs/02.jpg" alt="" />
 							</a>
@@ -189,23 +192,24 @@ title: Home - Myxi
 									<li><span class="button small">Details</span></li>
 								</ul>
 							</div>
-						</article>
-					</div>
-
+						</article> -->
+				 </div>
 			</section>
 
-			<section class="wrapper style1 align-center">
-				<div class="inner">
-					<h2>Snippets</h2>
-					<div class="items style1 medium onscroll-fade-in">
-						<section>
-							<span class="icon style2 major fa-diamond"></span>
-							<h3>Lorem</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-						</section>
+			<!-- Snippets -->
+				 <section class="wrapper style1 align-center">
+					<div class="inner">
+						<h2>Snippets</h2>
+						<div class="items style1 medium onscroll-fade-in">
+							<section>
+								<span class="icon style2 major fa-diamond"></span>
+								<h3>Lorem</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+							</section>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+
 		<!-- Six -->
 			<!-- <section class="wrapper style1 align-center">
 				<div class="inner">

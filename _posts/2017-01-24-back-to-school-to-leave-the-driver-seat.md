@@ -6,15 +6,16 @@ categories: self-driving-car
 image: assets/img/SelfDrivingCar/IMG_3488_edit.png
 ---
 It is to no surprise that Self Driving cars exist and the idea of
-having access to let these vehicles drive you from point A to point B is
-definitely in the near future. The excitement and joy of this reality to the
-public compared to operator with the primary responsibility to keep everyone
-safe around them is quite the difference.
-
+having access to these driverless vehicles transporting the public around is
+definitely in the near future.
 Personally, instead of anticipating that day when these vehicles would hit the
 road and become a service, ...
-
-Prior to joining this project on a full time basis, becoming a Software Engineer
-had already been a goal while attending a Community College. Being
-introduced into programming taking courses in C and Java challenges the student
-in a way that feels quite ...
+Prior to joining the project on a full time basis, learning programming
+had already been already been something I was doing but working full time and
+attending classes on campus wasn't possible due to schedule conflicts. This was
+a time before I even knew Bootcamps had exist which was something I learned
+about a year later. I put my dreams of becoming a programmer on hold and
+focused on getting through training at my job.
+Four months later upon finishing training, I was a full fledged Vehicle
+Operator and the team felt confident in my ability to hit the road without
+a more Senior Operator watching over me.

@@ -16,3 +16,6 @@ kramdown:
   syntax_highlighter: rouge
 include: ['_pages']
 exclude: [node_modules, gulpfile.js]
+
+collections:
+  - projects
